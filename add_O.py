@@ -8,7 +8,7 @@ from sys import argv
 file_name = argv[1]
 atoms = io.read('../../base/%s/CONTCAR' % file_name)
 
-position = atoms[48].position + [0, 0, 1.7]
+position = atoms[48].position + [0, 0, 1.75]
 atoms.append(Atom('O', position))
 
 io.write('POSCAR', atoms)
